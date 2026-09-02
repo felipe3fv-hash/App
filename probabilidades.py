@@ -15,11 +15,13 @@ class FatoresK:
 
     def calcular_ks1(self) -> float:
         if self.blindagem_continua: return 1e-4
+        if self.w_m1 <= 0.0: return 1.0
         k = min(0.12 * self.w_m1, 1.0)
         return k / 2.0 if self.malha_equipotencial else k
 
     def calcular_ks2(self) -> float:
         if self.blindagem_continua: return 1e-4
+        if self.w_m2 <= 0.0: return 1.0
         k = min(0.12 * self.w_m2, 1.0)
         return k / 2.0 if self.malha_equipotencial else k
 
