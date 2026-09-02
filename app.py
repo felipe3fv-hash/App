@@ -156,7 +156,7 @@ with aba3:
         hz_op = z2.selectbox("Perigo Pânico (hz):", ["1.0 - Sem Perigo", "2.0 - Baixo Pânico", "5.0 - Dificuldade Evacuação"], index=1)
         lt_op = z3.selectbox("Ferimento Choque (Lt):", ["0.0 - Não se aplica", "0.01 - Todos os tipos (Pessoas/Animais)"])
         
-        lf_op = z1.selectbox("Dano Físico Típico (Lf):", ["0.1 - Outros", "1.0 - Risco de explosão", "0.5 - Hospital, industrial, museu", "0.2 - Hotel, escola, comercial"])
+        lf_op = z1.selectbox("Dano Físico Típico (Lf):",["0.01 - Outros","1.0 - Risco de explosão","0.05 - Hospital, industrial, museu, agricultura","0.02 - Hotel, escola, escritório, igreja, comercial"], index=3)
         lo_op = z2.selectbox("Falha de Sistemas (Lo):", ["0.0001 - Outros", "0.1 - Risco de explosão", "0.01 - Hospital, comercial", "0.001 - Museu, agricultura"])
         ks3_op = z3.selectbox("Roteamento (KS3):", ["1.0 - Cabos não blindados", "0.5 - Evita grandes laços", "0.2 - Evita laços médios", "0.01 - pequenos laços"])
         
